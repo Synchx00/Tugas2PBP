@@ -4,4 +4,4 @@
 
 ## Bagan request client ke web aplikasi berbasis Django beserta respon
 
-![](https://github.com/Synchx00/Tugas2PBP/tree/main/katalog/images/bagan.png)
+![Bagan](https://github.com/Synchx00/Tugas2PBP/tree/main/katalog/images/bagan.png)
