@@ -22,3 +22,13 @@ Kita tetap dapat membuat aplikasi web berbasis Django tanpa menggunakan *virtual
 
 ## Implementasi
 
+1. Membuat fungsi pada ```views.py```
+> def show_catalog(request):
+    data_barang_catalog = CatalogItem.objects.all()
+    context = {
+    'list_barang': data_barang_catalog,
+    'nama': 'Son Sulung Suryahatta Asnan',
+    'id' : '2106751455'
+    
+}
+    return render(request, "katalog.html", context)
