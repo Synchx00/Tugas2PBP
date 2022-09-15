@@ -5,7 +5,7 @@
 ## Bagan request client ke web aplikasi berbasis Django beserta respon
 
 <p align="center">
-  <img src="https://github.com/Synchx00/Tugas2PBP/tree/main/katalog/images/bagan.png" />
+  <img src= "https://github.com/Synchx00/Tugas2PBP/tree/main/katalog/images/bagan.png"/>
 </p>
 1. ```urls.py``` akan memproses *Request* yang diminta oleh *client*
 
