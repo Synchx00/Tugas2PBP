@@ -4,7 +4,7 @@
 
 ## Bagan request client ke web aplikasi berbasis Django beserta respon
 
-<p align="center"><img src= "https://github.com/Synchx00/Tugas2PBP/tree/main/katalog/images/bagan.png"/></p>
+<p align="center"><img src= "https://drive.google.com/file/d/1zONAtFn9NEOXa3X0DCIsDv735gRli6bh/view?usp=sharing"/></p>
 
 1. ```urls.py``` akan memproses *Request* yang diminta oleh *user* dan dilakukan pencocokan dengan ```urlpatterns```
 2. Memanggil fungsi yang ada pada ```views.py```
