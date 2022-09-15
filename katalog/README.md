@@ -4,8 +4,9 @@
 
 ## Bagan request client ke web aplikasi berbasis Django beserta respon
 
-![Bagan](https://github.com/Synchx00/Tugas2PBP/tree/main/katalog/images/bagan.png)
-
+<p align="center">
+  <img src="https://github.com/Synchx00/Tugas2PBP/tree/main/katalog/images/bagan.png" />
+</p>
 1. ```urls.py``` akan memproses *Request* yang diminta oleh *client*
 
 ## kenapa menggunakan *virtual environment*?
