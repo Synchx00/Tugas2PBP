@@ -47,4 +47,8 @@ def show_catalog(request):
     ```
     pada ```urlpatterns``` di dalam file ```urls.py``` pada folder project_django
 
-3. 
+3. Memanfaatkan ```context``` yang ada pada fungsi ```show_catalog(request)``` untuk melakukan *mapping* ke dalam file ```html``` (Gunakan *syntax* Django)
+
+4. Melakukan ```add```, ```commit```, dan ```push```.
+
+5. Membuat *repository secret* dengan API key dan nama aplikasi untuk melakukan *deploy* pada heroku
