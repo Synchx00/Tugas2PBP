@@ -6,7 +6,13 @@
 
 <p align="center"><img src= "https://github.com/Synchx00/Tugas2PBP/tree/main/katalog/images/bagan.png"/></p>
 
-1. ```urls.py``` akan memproses *Request* yang diminta oleh *client*
+1. ```urls.py``` akan memproses *Request* yang diminta oleh *user* dan dilakukan pencocokan dengan ```urlpatterns```
+2. Memanggil fungsi yang ada pada ```views.py```
+3. Memanggil *query* ke ```models.py``` jika ada aktivitas yang menggunakan *database*
+4. Memproses data pada *database*
+5. *Response* data akan dikembalikan ke ```views.py```
+6. ```views.py``` akan memilih ```html``` yang sesuai dengan *mapping* sebelumnya
+7. *Response* akan diteruskan kembali ke *user* dan memberikan tampilan aplikasi
 
 ## kenapa menggunakan *virtual environment*?
 
