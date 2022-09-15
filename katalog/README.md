@@ -37,9 +37,14 @@ def show_catalog(request):
 
 2. Membuat routing pada ```urls.py``` di folder project django dan katalog
     - Menambahkan
-    ```path('', show_catalog, name='show_catalog')```
+    ```
+    path('', show_catalog, name='show_catalog')
+    ```
     pada ```urlpatterns``` di dalam file ```urls.py``` pada folder katalog
     - Menambahkan
-    ```path('katalog/', include('katalog.urls'))``` pada ```urlpatterns``` di dalam file ```urls.py``` pada folder project_django
-    
+    ```
+    path('katalog/', include('katalog.urls'))
+    ```
+    pada ```urlpatterns``` di dalam file ```urls.py``` pada folder project_django
+
 3. 
