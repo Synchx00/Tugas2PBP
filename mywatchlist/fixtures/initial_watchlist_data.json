@@ -1,0 +1,121 @@
+[
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 1,
+        "fields": {
+            "watched": "Watched",
+            "title": "The Fast and The Furious (2001)",
+            "rating": "10",
+            "release_date": "June 22, 2001",
+            "review": "Amazing"
+        }
+    },
+    
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 2,
+        "fields": {
+            "watched": "Watched",
+            "title": "2 Fast 2 Furious (2003)",
+            "rating": "10",
+            "release_date": "June 6, 2003",
+            "review": "Amazing"
+        }
+    },
+
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 3,
+        "fields": {
+            "watched": "Watched",
+            "title": "The Fast and the Furious: Tokyo Drift (2006)",
+            "rating": "10",
+            "release_date": "June 16, 2006",
+            "review": "Amazing"
+        }
+    },
+
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 4,
+        "fields": {
+            "watched": "Watched",
+            "title": "Fast & Furious (2009)",
+            "rating": "10",
+            "release_date": "April 3, 2009",
+            "review": "Amazing"
+        }
+    },
+
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 5,
+        "fields": {
+            "watched": "Watched",
+            "title": "Fast Five (2011)",
+            "rating": "10",
+            "release_date": "April 29, 2011",
+            "review": "Amazing"
+        }
+    },
+
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 6,
+        "fields": {
+            "watched": "Watched",
+            "title": "Fast & Furious 6 (2013)",
+            "rating": "10",
+            "release_date": "May 24, 2013",
+            "review": "Amazing"
+        }
+    },
+
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 7,
+        "fields": {
+            "watched": "Watched",
+            "title": "Furious 7 (2015)",
+            "rating": "10",
+            "release_date": "April 3, 2015",
+            "review": "Amazing"
+        }
+    },
+
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 8,
+        "fields": {
+            "watched": "Watched",
+            "title": "The Fate of the Furious (2017)",
+            "rating": "10",
+            "release_date": "April 14, 2017",
+            "review": "Amazing"
+        }
+    },
+
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 9,
+        "fields": {
+            "watched": "Watched",
+            "title": "F9 (2021)",
+            "rating": "10",
+            "release_date": "June 25, 2021",
+            "review": "Amazing"
+        }
+    },
+
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 10,
+        "fields": {
+            "watched": "Not watched",
+            "title": "Fast X",
+            "rating": "10",
+            "release_date": "May 19, 2023",
+            "review": "None"
+        }
+    }
+]
