@@ -2,6 +2,8 @@ from django.shortcuts import render
 from mywatchlist.models import WatchListItem
 from django.http import HttpResponse
 from django.core import serializers
+from tkinter import N
+from xml.dom import NotFoundErr
 
 # Create your views here.
 def show_film_list(request):
