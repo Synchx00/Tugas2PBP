@@ -23,3 +23,6 @@ def show_json(request):
     data = WatchListItem.objects.all()
 
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+
+def show_home(request):
+    return render(request, "mywatchlisthome.html")
