@@ -24,10 +24,22 @@ Untuk melakukan implementasi *request* dan *response* terhadap data yang ada di 
 
 1. Membuat aplikasi ```mywatchlist``` pada proyek Django.
 2. Menambahkan path 
-```python
-path('mywatchlist/', include('mywatchlist.urls'))
-``` 
-pada ```urls.py``` di folder ```project_django```
+    ```python
+    path('mywatchlist/', include('mywatchlist.urls'))
+    ``` 
+    pada ```urls.py``` di folder ```project_django```
+3. Membuat model ```Mywatchlist``` dengan beberapa atribut seperti yang ada   pada kode berikut 
+    ```python
+    from django.db import models
+
+    class WatchListItem(models.Model):
+        watched = models.CharField(max_length=255)
+        title = models.CharField(max_length=255)
+        rating = models.IntegerField()
+        release_date = models.TextField()
+        review = models.TextField()
+    ```
+
 
 ## Postman
 
