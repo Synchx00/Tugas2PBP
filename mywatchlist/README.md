@@ -194,7 +194,26 @@ Untuk melakukan implementasi *request* dan *response* terhadap data yang ada di 
 
         return HttpResponse(serializers.serialize("json", data), content_type="application/json")
     ```
+6. Membuat routing agar dapat yang sudah dibuat tadi dapat diakses dengan memasukkan kode berikut pada ```urlpatterns``` ```urls.py``` ```mywatchlist```
+    ```python
+    urlpatterns = [
 
+        ...
+        path('html/', show_film_list, name='show_film_list'),
+        path('xml/', show_xml, name='show_xml'),
+        path('json/', show_json, name='show_json'),
+    ]
+    ```
+7. Deploy aplikasi ke heroku (Pada tugas ini aplikasi ```mywatchlist``` sudah automatis ter-deploy karena pada tugas sebelumnya kita sudah melakukan deploy ```project_django``` yang merupakan *parent* dari ```mywatchlist```)
+8. Membuat ```README.md``` ini
+9. Melampirkan *screenshot response* dari aplikasi ```mywatchlist``` yang sudah di deploy ke heroku
+10. Menambahkan *unit test* pada ```tests.py```
+11. Menambahkan logic
+
+    - Jika jumlah film yang sudah ditonton lebih banyak atau sama dengan jumlah film yang belum ditonton, tampilkan pesan "Selamat, kamu sudah banyak menonton!" dalam bentuk HTML
+    - Jika jumlah film yang belum ditonton lebih banyak dari jumlah film yang sudah ditonton, tampilkan pesan "Wah, kamu masih sedikit menonton!" dalam bentuk HTML
+
+    pada ```views.py``` dan *syntax* Django pada ```mywatchlist.html```
 
 ## Postman
 
