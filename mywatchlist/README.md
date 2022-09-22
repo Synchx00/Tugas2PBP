@@ -213,7 +213,7 @@ Untuk melakukan implementasi *request* dan *response* terhadap data yang ada di 
     - Jika jumlah film yang sudah ditonton lebih banyak atau sama dengan jumlah film yang belum ditonton, tampilkan pesan "Selamat, kamu sudah banyak menonton!" dalam bentuk HTML
     - Jika jumlah film yang belum ditonton lebih banyak dari jumlah film yang sudah ditonton, tampilkan pesan "Wah, kamu masih sedikit menonton!" dalam bentuk HTML
 
-    pada ```views.py``` dan *syntax* Django pada ```mywatchlist.html```
+    pada ```views.py``` dan *syntax* Django pada ```mywatchlist.html``` untuk nilai bonus hehe :)
 
 ## Postman
 
