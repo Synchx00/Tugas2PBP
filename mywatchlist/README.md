@@ -208,7 +208,7 @@ Untuk melakukan implementasi *request* dan *response* terhadap data yang ada di 
 8. Membuat ```README.md``` ini
 9. Melampirkan *screenshot response* dari aplikasi ```mywatchlist``` yang sudah di deploy ke heroku
 10. Menambahkan *unit test* pada ```tests.py```
-11. Menambahkan logic
+11. Menambahkan *logic*
 
     - Jika jumlah film yang sudah ditonton lebih banyak atau sama dengan jumlah film yang belum ditonton, tampilkan pesan "Selamat, kamu sudah banyak menonton!" dalam bentuk HTML
     - Jika jumlah film yang belum ditonton lebih banyak dari jumlah film yang sudah ditonton, tampilkan pesan "Wah, kamu masih sedikit menonton!" dalam bentuk HTML
