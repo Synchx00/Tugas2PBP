@@ -23,7 +23,11 @@ Untuk melakukan implementasi *request* dan *response* terhadap data yang ada di 
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 
 1. Membuat aplikasi ```mywatchlist``` pada proyek Django.
-2. Menambahkan path ```path('mywatchlist/', include('mywatchlist.urls'))``` pada ```urls.py``` di folder ```project_django```
+2. Menambahkan path 
+```python
+path('mywatchlist/', include('mywatchlist.urls'))
+``` 
+pada ```urls.py``` di folder ```project_django```
 
 ## Postman
 
