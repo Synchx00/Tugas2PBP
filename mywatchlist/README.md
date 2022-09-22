@@ -39,6 +39,161 @@ Untuk melakukan implementasi *request* dan *response* terhadap data yang ada di 
         release_date = models.TextField()
         review = models.TextField()
     ```
+4. Menambahkan 10 data untuk objek ```MyWatchList``` pada file ```initial_watchlist_data.json```
+    ```json
+    [
+        {
+            "model": "mywatchlist.watchlistitem",
+            "pk": 1,
+            "fields": {
+                "watched": "Watched",
+                "title": "The Fast and The Furious (2001)",
+                "rating": 10,
+                "release_date": "June 22, 2001",
+                "review": "Amazing"
+            }
+        },
+        
+        {
+            "model": "mywatchlist.watchlistitem",
+            "pk": 2,
+            "fields": {
+                "watched": "Watched",
+                "title": "2 Fast 2 Furious (2003)",
+                "rating": 10,
+                "release_date": "June 6, 2003",
+                "review": "Amazing"
+            }
+        },
+
+        {
+            "model": "mywatchlist.watchlistitem",
+            "pk": 3,
+            "fields": {
+                "watched": "Watched",
+                "title": "The Fast and the Furious: Tokyo Drift (2006)",
+                "rating": 10,
+                "release_date": "June 16, 2006",
+                "review": "Amazing"
+            }
+        },
+
+        {
+            "model": "mywatchlist.watchlistitem",
+            "pk": 4,
+            "fields": {
+                "watched": "Watched",
+                "title": "Fast & Furious (2009)",
+                "rating": 10,
+                "release_date": "April 3, 2009",
+                "review": "Amazing"
+            }
+        },
+
+        {
+            "model": "mywatchlist.watchlistitem",
+            "pk": 5,
+            "fields": {
+                "watched": "Watched",
+                "title": "Fast Five (2011)",
+                "rating": 10,
+                "release_date": "April 29, 2011",
+                "review": "Amazing"
+            }
+        },
+
+        {
+            "model": "mywatchlist.watchlistitem",
+            "pk": 6,
+            "fields": {
+                "watched": "Watched",
+                "title": "Fast & Furious 6 (2013)",
+                "rating": 10,
+                "release_date": "May 24, 2013",
+                "review": "Amazing"
+            }
+        },
+
+        {
+            "model": "mywatchlist.watchlistitem",
+            "pk": 7,
+            "fields": {
+                "watched": "Watched",
+                "title": "Furious 7 (2015)",
+                "rating": 10,
+                "release_date": "April 3, 2015",
+                "review": "Amazing"
+            }
+        },
+
+        {
+            "model": "mywatchlist.watchlistitem",
+            "pk": 8,
+            "fields": {
+                "watched": "Watched",
+                "title": "The Fate of the Furious (2017)",
+                "rating": 10,
+                "release_date": "April 14, 2017",
+                "review": "Amazing"
+            }
+        },
+
+        {
+            "model": "mywatchlist.watchlistitem",
+            "pk": 9,
+            "fields": {
+                "watched": "Watched",
+                "title": "F9 (2021)",
+                "rating": 10,
+                "release_date": "June 25, 2021",
+                "review": "Amazing"
+            }
+        },
+
+        {
+            "model": "mywatchlist.watchlistitem",
+            "pk": 10,
+            "fields": {
+                "watched": "Not watched",
+                "title": "Fast X",
+                "rating": 0,
+                "release_date": "May 19, 2023",
+                "review": "None"
+            }
+        }
+    ]
+    ```
+5. Menambahkan fitur untuk menyajikan data dalam format ```html```  ```xml``` ```json``` dengan memasukkan kode berikut pada ```views.py```
+    ```python
+    def show_film_list(request):
+        data_watchlist = WatchListItem.objects.all()
+
+        watched = WatchListItem.objects.filter(watched="Watched")
+        not_watched = WatchListItem.objects.filter(watched="Not watched")
+
+        watched_count = watched.count()
+        not_watched_count = not_watched.count()
+        
+        watched_status = watched_count >= not_watched_count
+
+        context = {
+        'list_film': data_watchlist,
+        'nama': 'Son Sulung Suryahatta Asnan',
+        'id' : '2106751455',
+        'status_check' : watched_status,
+    }
+        return render(request, "mywatchlist.html", context)
+
+    def show_xml(request):
+        data = WatchListItem.objects.all()
+
+        return HttpResponse(serializers.serialize("xml", data), content_type="application/xml")
+
+    def show_json(request):
+        data = WatchListItem.objects.all()
+
+        return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+    ```
 
 
 ## Postman
