@@ -22,7 +22,7 @@ Ya, kita sangat mungkin untuk membuat form secara manual. Cara kita untuk membua
     ```python
     path('todolist/', include('todolist.urls'))
     ```
-pada ```urls.py``` di folder ```project_django```
+    pada ```urls.py``` di folder ```project_django```
 
 3. Membuat model ```Task``` dengan beberapa atribut seperti yang ada pada kode berikut
     ```python
@@ -33,3 +33,9 @@ pada ```urls.py``` di folder ```project_django```
         description = models.TextField()
         is_finished = models.BooleanField(default=False)
     ```
+
+4. Menjalankan perintah ```python manage.py makemingrations``` dan ```python manage.py migrate```
+
+5. Membuat fungsi-fungsi untuk implementasi ```form registrasi```, ```login```, dan ```logout``` agar ````todolist``` dapat digunakan oleh *user* dengan baik.
+
+6. 
