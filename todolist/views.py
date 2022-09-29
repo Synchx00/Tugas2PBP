@@ -22,7 +22,7 @@ def register(request):
             messages.success(request, 'Akun telah berhasil dibuat!')
             return redirect('todolist:login')
     
-    return render(request, 'regist.html', context)
+    return render(request, 'register.html', context)
 
 def login_user(request):
     if request.method == 'POST':
