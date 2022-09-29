@@ -19,9 +19,17 @@ Ya, kita sangat mungkin untuk membuat form secara manual. Cara kita untuk membua
 1. Membuat aplikasi ```todolist``` pada proyek Django.
 
 2. Menambahkan path
-```python
+    ```python
     path('todolist/', include('todolist.urls'))
-```
+    ```
 pada ```urls.py``` di folder ```project_django```
 
-3. 
+3. Membuat model ```Task``` dengan beberapa atribut seperti yang ada pada kode berikut
+    ```python
+    class Task (models.Model):
+        user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE,blank=True, null=True,)
+        date = models.DateField(auto_now=True)
+        title = models.TextField()
+        description = models.TextField()
+        is_finished = models.BooleanField(default=False)
+    ```
