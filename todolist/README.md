@@ -52,7 +52,7 @@ Ketika user menekan *submit button*, maka *request* POST akan dikirimkan ke serv
     path('logout/', logout_user, name='logout'), 
     path('update_task/<str:key>/', update_task, name='update_task'),
     path('delete_task/<str:key>/', delete_task, name="delete_task"),
-]
+    ]
     ```
 
 9. Deploy aplikasi ke heroku (Pada tugas ini aplikasi ```mywatchlist``` sudah automatis ter-deploy karena pada tugas sebelumnya kita sudah melakukan deploy ```project_django``` yang merupakan *parent* dari ```mywatchlist```)
