@@ -36,6 +36,6 @@ Ya, kita sangat mungkin untuk membuat form secara manual. Cara kita untuk membua
 
 4. Menjalankan perintah ```python manage.py makemingrations``` dan ```python manage.py migrate```
 
-5. Membuat fungsi-fungsi untuk implementasi ```form registrasi```, ```login```, dan ```logout``` agar ````todolist``` dapat digunakan oleh *user* dengan baik.
+5. Membuat fungsi-fungsi untuk implementasi ```form registrasi```, ```login```, dan ```logout``` agar ```todolist``` dapat digunakan oleh *user* dengan baik.
 
 6. 
