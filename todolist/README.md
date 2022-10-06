@@ -73,9 +73,9 @@ Inline CSS adalah kode CSS yang ditulis langsung pada atribut elemen HTML. Setia
 
 Cara ini kurang efisien karena setiap tag HTML yang diberikan harus memiliki style masing-masing. Anda akan lebih sulit dalam mengatur website jika hanya menggunakan inline style CSS. Sebab, Inline CSS digunakan hanya untuk mengubah satu elemen saja.
 
-- Manfaat Inline CSS
+- Manfaat Inline CSS:
     Sangat membantu ketika Anda hanya ingin menguji dan melihat perubahan pada satu elemen, Berguna untuk memperbaiki kode dengan cepat, dan Proses permintaan HTTP yang lebih kecil dan proses load website akan lebih cepat.
-- Kekurangan Inline CSS
+- Kekurangan Inline CSS:
     Tidak efisien karena Inline style CSS hanya bisa diterapkan pada satu elemen HTML.
 
 2. Internal CSS
@@ -84,9 +84,9 @@ Internal CSS adalah kode CSS yang ditulis di dalam tag `<style>` dan kode HTML d
 
 Cara ini akan sangat cocok dipakai untuk menciptakan halaman web dengan tampilan yang berbeda. Dengan kata lain, Internal CSS ini bisa dipakai untuk menciptakan tampilan yang unik, pada setiap halaman website.
 
-- Manfaat Internal CSS
+- Manfaat Internal CSS:
     Perubahan pada Internal CSS hanya berlaku pada satu halaman saja, Anda tidak perlu melakukan upload beberapa file karena HTML dan CSS berada dalam satu file, dan Class dan ID bisa digunakan oleh internal stylesheet.
-- Kekurangan Internal CSS
+- Kekurangan Internal CSS:
     Tidak efisien apabila Anda ingin menggunakan CSS yang sama dalam beberapa file dan Membuat performa website lebih lambat. Sebab, CSS yang berbeda-beda akan mengakibatkan loading ulang setiap kali Anda ganti halaman website.
 
 3. External CSS
@@ -95,9 +95,9 @@ Eksternal CSS adalah kode CSS yang ditulis terpisah dengan kode HTML Eksternal C
 
 Cara ini lebih sederhana dan simpel daripada menambahkan kode CSS di setiap elemen HTML yang ingin Anda atur tampilannya. 
 
-- Manfaat External CSS
+- Manfaat External CSS:
     Ukuran file HTML akan menjadi lebih kecil dan struktur dari kode HTML jadi lebih rapi, Loading website menjadi lebih cepat, dan File CSS dapat digunakan di beberapa halaman website sekaligus. 
-- Kekurangan External CSS
+- Kekurangan External CSS:
     Halaman akan menjadi berantakan, ketika file CSS gagal dipanggil oleh file HTML. Hal ini terjadi disebabkan karena koneksi internet yang lambat.
     
 
