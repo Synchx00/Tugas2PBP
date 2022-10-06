@@ -1,34 +1,72 @@
 {% extends 'base.html' %}
 
 {% block meta %}
-<title>Create Task</title>
+<title>Create Your Task</title>
 {% endblock meta %}
 
 {% block content %}  
 
-<div class = "Create Task">
-    
-    <h1>Create Task</h1>  
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" >Todolist</a>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'todolist:show_todolist' %}">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'todolist:create_task' %}">Create Task</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'todolist:logout' %}">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <section class="vh-20">
+        <div class="container py-5 h-20">
+            <div class="row d-flex justify-content-center align-items-center h-10">
+                <div class="card" id="list1" style="border-radius: .5rem; width: 50rem; background-color: #e7eef0;">
+                <div class="card-body py-1 px-1 px-md-1">
+                    <p class="h1 text-center mt-1 mb1 pb-1 text-primary">
+                        <a style="color:#5e8f83">Create Task</a>
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
         <form method="POST" >  
-            {% csrf_token %}  
-            <table>  
-                {{ form.as_table }}  
-                <tr>  
-                    <td></td>
-                    <td><input type="submit" name="submit" value="Save"/></td>  
-                </tr>  
-            </table>  
+          {% csrf_token %}  
+          <div class="form-group">
+            <label>Title</label>
+            <input type="text" name="title" placeholder="Title" required class="form-control border rounded-lg border-gray-400 w-full">
+          </div>
+
+          <div class="form-group">
+            <label>Description</label>
+            <input type="text" name="description" placeholder="Description" required class="form-control border rounded-lg border-gray-400 w-full">
+          </div>
+
+          {% if messages %}  
+            <ul class="form-group">   
+              {% for message in messages %}  
+                <li>{{ message }}</li>  
+              {% endfor %}  
+            </ul>   
+          {% endif %}
+
+          <div class="col text-center">
+              <button class="btn btn-outline-primary btn-lg px-5" type="submit" value="Submit" style="color:#5e8f83">Submit</button>
+          </div>
+
         </form>
 
-    {% if messages %}  
-        <ul>   
-            {% for message in messages %}  
-                <li>{{ message }}</li>  
-                {% endfor %}  
-        </ul>   
-    {% endif %}
 
-</div>  
 
 {% endblock content %}
