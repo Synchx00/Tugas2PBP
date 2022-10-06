@@ -71,23 +71,17 @@ Ketika user menekan *submit button*, maka *request* POST akan dikirimkan ke serv
 
 ## Jelaskan tag HTML5 yang kamu ketahui.
 
-1. <audio>
-    Memasukkan audio ke dokumen HTML
-2. <video>
-    Memasukkan video ke dokumen HTML
-3. <time> 
-    Menampilkan hari dan atau tanggal
+1. `<audio>`, Memasukkan audio ke dokumen HTML
+2. `<video>`, Memasukkan video ke dokumen HTML
+3. `<time>`, Menampilkan hari dan atau tanggal
 
 ## Jelaskan tipe-tipe CSS selector yang kamu ketahui.
 
-1. *
-    Memilih semua elemen
+1. `*`, Memilih semua elemen
 
-2. element
-    Memilih semua <p> elemen
+2. element, Memilih semua `<p>` elemen
 
-3. .class
-    Memilih semua elemen dengan class="intro"
+3. .class, emilih semua elemen dengan class="intro"
 
 ##  Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 
