@@ -62,3 +62,35 @@ Ketika user menekan *submit button*, maka *request* POST akan dikirimkan ke serv
 11. Membuat ```README.md``` ini
 
 12. Menambahkan fitur bonus yang berisi ```status``` dari ```task``` dan tombol untuk mengubah ```status``` dan tombol untuk menghapus ```task```
+
+# Tugas 5: Web Design Using HTML, CSS, and CSS Framework
+
+##  Apa perbedaan dari Inline, Internal, dan External CSS? Apa saja kelebihan dan kekurangan dari masing-masing style?
+
+
+
+## Jelaskan tag HTML5 yang kamu ketahui.
+
+1. <audio>
+    Memasukkan audio ke dokumen HTML
+2. <video>
+    Memasukkan video ke dokumen HTML
+3. <time> 
+    Menampilkan hari dan atau tanggal
+
+## Jelaskan tipe-tipe CSS selector yang kamu ketahui.
+
+1. *
+    Memilih semua elemen
+
+2. element
+    Memilih semua <p> elemen
+
+3. .class
+    Memilih semua elemen dengan class="intro"
+
+##  Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+
+1. Mencari contoh template di internet
+2. Menjadikan template tersebut sebagai referensi
+3. *Coding*-in
